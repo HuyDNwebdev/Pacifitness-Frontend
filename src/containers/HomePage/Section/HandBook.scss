@@ -1,0 +1,36 @@
+.section-handbook {
+  border-bottom: 3px solid #efeef5;
+  //   border: 1px solid blue;
+  height: 25rem;
+  background-color: #f5f5f5;
+  .section-title {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  .section-content-card {
+    flex-direction: row !important;
+    max-width: inherit !important;
+    height: 18rem;
+    .handbook-img {
+      width: 50% !important;
+      height: 20px;
+      display: flex;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      justify-content: flex-start;
+      border-radius: 2%;
+    }
+    .card-name {
+      float: right;
+      height: 40%;
+      width: 40%;
+      margin-right: 9%;
+      margin-top: -1rem !important;
+    }
+  }
+  .section-more {
+    width: 158px;
+    top: -300px !important;
+    margin-right: -87rem;
+  }
+}

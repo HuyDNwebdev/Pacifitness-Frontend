@@ -1,0 +1,371 @@
+* {
+  font: 14px/1.5 "Montserrat", sans-serif;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Montserrat, sans-serif;
+}
+.home-header-container {
+  height: 80px;
+  display: block;
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0px 1px 1px 1px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .home-header-content {
+    width: 65%;
+    height: 100%;
+    display: flex;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    .left-content {
+      width: 25%;
+      // border: 2px solid green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .header-logo {
+        background: url("../../assets/logo.svg") center center no-repeat;
+        height: 100%;
+        width: 55%;
+        // padding: 0;
+        cursor: pointer;
+      }
+      i {
+        font-size: 20px;
+        color: grey;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+    .center-content {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .child-content {
+        color: #333;
+        font-weight: bold;
+        font-size: 12px;
+        .detail {
+          font-weight: lighter;
+          font-size: 10px;
+          color: grey;
+        }
+      }
+    }
+    .right-content {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0;
+      .support {
+        margin-right: 10px;
+        padding-right: 50px;
+        i {
+          margin-right: 5px;
+        }
+      }
+      .language-vi {
+        opacity: 0.3;
+        cursor: pointer;
+
+        &.active {
+          opacity: 1;
+          span {
+            color: orange;
+            font-size: 15px;
+            cursor: pointer;
+          }
+        }
+        &:hover {
+          opacity: 0.9;
+          cursor: pointer;
+        }
+        margin-right: 12px;
+      }
+      .language-en {
+        margin: 0 6px;
+
+        opacity: 0.3;
+
+        &.active {
+          opacity: 1;
+          span {
+            color: blue;
+            font-size: 15px;
+            cursor: pointer;
+          }
+        }
+        &:hover {
+          opacity: 0.9;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.home-header-banner {
+  height: 77vh;
+  display: flex;
+  background: url("../../assets/images/banner.jpg") center center no-repeat;
+
+  background-size: cover;
+  flex-direction: column;
+
+  .content-up {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(255, 255, 255, 0.1)
+    );
+    height: 75%;
+    color: #333;
+    .title1 {
+      text-align: center;
+      font-size: 32px;
+      text-shadow: 1px 1px 1px #333;
+      margin-bottom: 5px;
+      color: white;
+      margin-top: 115px;
+      text-transform: uppercase;
+    }
+
+    .title2 {
+      text-align: center;
+      font-size: 32px;
+      text-shadow: 1px 1px 1px #333;
+      color: white;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .search {
+      text-align: center;
+      width: 450px;
+      // border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      align-items: center;
+      padding: 10px;
+      border-radius: 25px;
+      background-color: #f7d800;
+      i {
+        margin: 0 5px;
+      }
+
+      input {
+        height: 30px;
+        width: 360px;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+    }
+    .app-link {
+      // border: 2px solid green;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 15%;
+      margin-top: 110px;
+      .android-app {
+        width: 115px;
+        height: 35px;
+        // border: 2px solid red;
+        background-image: url("../../assets/images/google-play.svg") !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 15px;
+      }
+      .ios-app {
+        width: 110px;
+        height: 35px;
+        // border: 2px solid red;
+        background-image: url("../../assets/images/App-Store.svg") !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .content-down {
+    height: 25%;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 1)
+    );
+
+    .options {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      height: 100%;
+      .option-child {
+        width: 8%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        color: #333;
+        justify-content: center;
+        .text-child {
+          font-weight: 700;
+          font-size: 16px;
+          &:hover {
+            color: #49bce2;
+          }
+          cursor: pointer;
+          width: 70%;
+          margin: 0 auto;
+        }
+        .icon-child-chuyen-khoa {
+          background-image: url("../../assets/images/khamchuyenkhoa.png") !important;
+          border: 3px solid white;
+          background: #fff;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          background-size: 32px;
+          margin: 0 auto;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          box-shadow: 0px 1px 2px #333;
+        }
+        .icon-child-tu-xa {
+          background-image: url("../../assets/images/khamtuxa.png") !important;
+          border: 3px solid white;
+          background: #fff;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          margin: 12px auto;
+          margin-top: -10px;
+          background-size: 32px;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          box-shadow: 0px 1px 2px #333;
+        }
+        .icon-child-tong-quat {
+          background-image: url("../../assets/images/khamtongquat.png") !important;
+          border: 3px solid white;
+          background: #fff;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          margin: 2px auto;
+          background-size: 32px;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          box-shadow: 0px 1px 2px #333;
+        }
+        .icon-child-xet-nghiem {
+          background-image: url("../../assets/images/xetnghiemyhoc.png") !important;
+          border: 3px solid white;
+          background: #fff;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          margin: 2px auto;
+          background-size: 32px;
+          display: flex;
+          background-repeat: no-repeat;
+          background-position: center;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          box-shadow: 0px 1px 2px #333;
+        }
+        .icon-child-tinh-than {
+          background-image: url("../../assets/images/suckhoetinhthan.png") !important;
+          border: 3px solid white;
+          background: #fff;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          margin: 2px auto;
+          background-size: 32px;
+          display: flex;
+          background-repeat: no-repeat;
+          background-position: center;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          box-shadow: 0px 1px 2px #333;
+        }
+        .icon-child-nha-khoa {
+          background-image: url("../../assets/images/khamchuyenkhoa.png") !important;
+          border: 3px solid white;
+          background: #fff;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          margin: 2px auto;
+          background-size: 32px;
+          display: flex;
+          background-repeat: no-repeat;
+          background-position: center;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          box-shadow: 0px 1px 2px #333;
+        }
+
+        .icon-child-phau-thuat {
+          background-image: url("../../assets/images/goi-phau-thuat.png") !important;
+          border: 3px solid white;
+          background: #fff;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          margin: 2px auto;
+          background-size: 32px;
+          display: flex;
+          background-repeat: no-repeat;
+          background-position: center;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          box-shadow: 0px 1px 2px #333;
+        }
+        .icon-child-san-pham {
+          background-image: url("../../assets/images/sanphamyte.png") !important;
+          border: 3px solid white;
+          background: #fff;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          margin: 2px auto;
+          background-size: 32px;
+          display: flex;
+          background-repeat: no-repeat;
+          background-position: center;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          box-shadow: 0px 1px 2px #333;
+        }
+      }
+    }
+  }
+}

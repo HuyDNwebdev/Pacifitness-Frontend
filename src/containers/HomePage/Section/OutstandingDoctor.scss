@@ -1,0 +1,64 @@
+.section-doctor {
+  background: #fff;
+  border-bottom: 3px solid #efeef5;
+
+  .section-content {
+    .section-content-card {
+      // border: 1px solid #eee !important;
+      text-align: center;
+      height: 300px;
+      padding: 15px 15px;
+
+      background: rgba(255, 255, 255, 1);
+
+      margin: 5px;
+      border: 1px solid #eee;
+      border: 5px solid #0a9e88 !important;
+
+      img {
+        width: 145px;
+        height: 145px;
+        overflow: hidden;
+        margin: 0 auto;
+        float: center;
+        border-radius: 50%;
+        border: 1px solid #0a9e88;
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+      }
+      &:hover {
+        transform: none !important;
+        cursor: pointer;
+      }
+
+      .card-name {
+        .name {
+          text-align: center;
+          margin-top: 15px;
+          font-size: 1vw;
+          // border: 4px solid red !important;
+        }
+        .field {
+          display: flex;
+          justify-content: center;
+          font-size: 1.5rem;
+        }
+      }
+
+      .card-location {
+        margin: 0;
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: medium;
+        width: 100%;
+        height: 1rem;
+      }
+      .icon-location {
+        margin-left: 90px;
+        width: 30px !important;
+      }
+    }
+  }
+}
